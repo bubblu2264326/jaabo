@@ -1,1 +1,64 @@
-is pa likh
+#include<stdio.h>
+#include<string.h>
+#include<conio.h>
+#include<windows.h>
+struct employee{
+	char name[30];
+	char edu[30]; //qualifications
+	char city[15];  //City in which are performing your duties    
+	char availible_hours[10];  
+	char experty[15];   //the field in which you have a strong grip
+	char experience[8];  //no of years you have experience in your field
+	char contact_info[15];  //it can be either e-mail or phone number 
+	int pay_per_hour;  //payment wants by employee on per hour system  
+	char avil_days[40]; //available days
+};
+struct customer{
+	char choice1[30];   //for example: plumber, electrician etc.
+	char choice2[30];
+	char choice3[30];
+	char choice4[30];
+};
+int main(){
+	printf("*<<<*<<<*<<<*<<< JABBO >>>*>>>*>>>*>>>*");
+	char choice; 
+	printf("ENTER YOUR CHOICE\n-----------------\n(press 'c' for customer) & (press 'e' for employee): ");
+	scanf("%c", &choice);
+	int ch; //choice for plumber elec etc.
+	printf("ENTER YOUR CHOICE FOR ANY SERVICE: ");
+	scanf("%c", &ch);
+	if(choice==c){   // for employee
+		printf("<<<<<< FILL THE FORM >>>>>");
+		struct employee emp{
+			printf("NAME: ");
+			gets(&emp.name);
+			printf("YOUR EDUCATION: ");
+			gets(&emp.edu);
+			printf("CITY: ");
+			gets(&emp.city);
+			printf("AVAILABLE HOURS: ");
+			gets(&emp.availible_hours);
+			printf("YOUR EXPERTY: ");
+			gets(&emp.experty);
+			printf("EXERIENCE: ");
+			gets(&emp.experience);
+			printf("CONTACT INFORMATION: ");
+			gets(&emp.contact_info);
+			printf("YOUR PAYMENT WANT: ");
+			gets(&emp.pay_per_hour);
+			printf("YOUR AVAILABLE DAYS: ");
+			gets(&emp.avil_days);
+		};
+	}
+	else{  //for customer 
+	    struct customer cus;
+		printf("WHICH SERVICE DO YOU NEED FROM THE FOLLOWINGS: ");
+			gets(&cus.choice1);
+			gets(&cus.choice2);
+			gets(&cus.choice3);
+		    gets(&cus.choice4);
+		    if(ch==&emp.experty){
+		    	//idhar jo employee ka form ha na wo show hona chaiay
+			}
+    }
+}
