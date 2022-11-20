@@ -1,0 +1,98 @@
+#include<stdio.h>
+#include<strings.h>
+struct employee{
+   	char name[15],profession[10];
+	int phone_no[15],pay_per_hour[5],work_experince[4];
+};
+int main(){
+	struct employee n[100];
+	int choice,a,i=0;
+	while(choice!=3){
+	 printf("1.Customer\n2.Employee\n3.exit\nEnter Your Choice:");
+    scanf("%d",&choice);
+	if(choice==1){
+    	printf("What Service Do you Want");
+    	printf("1.electrician\n2.cleaner\n3.plumber\n4.mechanic\n5.carpenter");
+    	scanf("%d",&a);
+    	 
+		 //printf("%s\n",n[i].profession);
+        if(a==1){
+        	for(int j=0;j<100;j++){
+        		if(strcmp(n[j].profession,"electrician")==0){
+        			//printf("c");
+        			printf("name:%s",n[j].name);
+        			printf("phone no:%d",n[j].phone_no);
+        			printf("pay per hour:%d",n[j].pay_per_hour);
+        			printf("work experience:%d",n[j].work_experince);
+				}
+				else{
+				   break;
+				}
+				
+				}
+			}
+		 else if(a==2){
+				for(int j=0;j<100;j++){
+				 if(strcmp(n[i].profession,"cleaner")==0){
+					printf("name:%s",n[j].name);
+        			printf("phone no:%d",n[j].phone_no);
+        			printf("pay per hour:%d",n[j].pay_per_hour);
+        			printf("work experience:%d",n[j].work_experince);
+				}
+				}
+			}
+			else if(a==3){
+			    for(int j=0;j<100;j++){
+					if(strcmp(n[j].profession,"plumber")==0){
+					printf("name:%s",n[j].name);
+        			printf("phone no:%d",n[j].phone_no);
+        			printf("pay per hour:%d",n[j].pay_per_hour);
+        			printf("work experience:%d",n[j].work_experince);
+				}
+			}
+			}
+			   else if(a==4){
+			        for(int j=0;j<100;j++){
+					 if(strcmp(n[j].profession,"mechanic")==0){
+					printf("name:%s",n[j].name);
+        			printf("phone no:%d",n[j].phone_no);
+        			printf("pay per hour:%d",n[j].pay_per_hour);
+        			printf("work experience:%d",n[j].work_experince);
+				}
+				}}
+				else if(a==5){
+			        for(int j=0;j<100;j++){
+					 if(strcmp(n[j].profession,"carpenter")==0){
+					printf("name:%s",n[j].name);
+        			printf("phone no:%d",n[j].phone_no);
+        			printf("pay per hour:%d",n[j].pay_per_hour);
+        			printf("work experience:%d",n[j].work_experince);
+				}
+				}
+				}
+				
+				
+	}
+	else if(choice==2){
+	  printf("Enter Your Profession name:");
+	  fflush(stdin);
+	  scanf("%s",n[i].profession);
+	  //printf("%s\n",n[i].profession);
+	  printf("Enter Your Name:");
+	  fflush(stdin);
+	  scanf("%s",n[i].name);
+	  printf("Enter Your Phone No:");
+	  
+	  scanf("%d",&n[i].phone_no);
+	  printf("Enter Your Pay Per Hour:");
+	  scanf("%d",&n[i].pay_per_hour);
+	  printf("Enter Your Experince in months:");
+	  scanf("%d",&n[i].work_experince);  
+	  i++;
+	}
+	else{
+		//printf("Wrong choice");
+	}
+
+}
+}
