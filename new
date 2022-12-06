@@ -130,7 +130,7 @@ int main(){
 	  i++;
 	}
 	else if(choice==3){             //admin portal to maintai the data of employee.
-		int c=1;                      //we gave admin to read write acess by using filing
+		int c;                      //we gave admin to read write acess by using filing
 	while(c!=0){
 		printf("Welcome To admin Portal\nEnter The password\n To exit Press 0:");
 		scanf("%d",&c);
