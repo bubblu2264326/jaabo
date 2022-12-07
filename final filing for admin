@@ -1,0 +1,284 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+#include<windows.h>
+#include<conio.h>
+struct employee{
+   	char name[20];
+   	char edu[15];
+	char profession[12];
+	char available_days[12];
+	char contact[20];   //this can either be your e mail or phone no
+	int pay_per_hour;
+	char work_experince[10];
+	char availible_hours[15];
+};
+struct customer{
+	char service1[10];
+	char service2[10];
+	char service3[10];
+	char service4[10];
+	char service5[10];
+};
+int main(){
+
+	system("color 00");
+	int no;
+	printf("\t\t\t-------------------------------------------");
+	printf("\n\t\t\t*<<<*<<<*<<<*<<<* JABBO *>>>*>>>*>>>*>>>");
+	printf("\n\t\t\t-------------------------------------------");
+	printf("\n\t\t\t-------------------------------------------");
+	printf("\n\t\t\t\t---: MAKING LIFE EASIER :---\n");
+	printf("\t\t\t-------------------------------------------\n");
+	printf("\t\t\t\tBEST SERVICE PROVIDER\n\t\t\t=============================================\n");
+	printf("Enter the no of entries you want to enter as an employee: ");
+	scanf("%d", &no);
+		FILE *fp;
+	//struct employee n[no];
+	fp = fopen("details.txt", "r");
+	if(fp==NULL){
+	printf("file does not exist");
+	exit(1);
+	}
+	struct employee n[no];
+	int choice,a,i=0;
+	while(choice!=4){
+	 printf("1.Customer\n2.Employee\n3.Admin\n4.exit\nEnter Your Choice:");
+    scanf("%d",&choice);
+	if(choice==1){
+	
+    	printf("\n\t\t1.electrician\n2.cleaner\n3.plumber\n4.mechanic\n5.carpenter\nenter your choice: ");
+    	scanf("%d",&a);
+		 //printf("%d\n",n[i].pay_per_hour);
+        if(a==1){
+        	for(int j=0;j<no;j++){
+        		if(strcmp(n[j].profession,"electrician")==0){
+    				FILE *fp;
+    				struct employee n[no];
+					fp = fopen("details.txt", "r");
+					if(fp == NULL){
+						printf("file does not exist");
+						exit(1);
+					}
+        			printf("----HERE IS YOUR MATCHED RESULT----\n");
+        			fread(&n, sizeof(n), 1,fp);
+        			fclose(fp);
+//        			fscanf(fp, "name: %s\n",n[j].name);
+//        			fscanf(fp, "your contact: %s\n",n[j].contact);
+//        			fscanf(fp, "pay per hour: %d\n",n[j].pay_per_hour);
+//        			fscanf(fp, "work experience: %s\n",n[j].work_experince);
+//        			fscanf(fp, "available days: %s\n", n[j].available_days);
+//        			fscanf(fp, "available hours: %s\n", n[j].availible_hours);
+        			
+        			printf("name:%s\n",n[j].name);
+        			printf("your contact: %s\n",n[j].contact);
+        			printf("pay per hour: %d\n",n[j].pay_per_hour);
+        			printf("work experience: %s\n",n[j].work_experince);
+        			printf("available days: %s\n", n[j].available_days);
+        			printf("available hours: %s\n", n[j].availible_hours);
+				}
+				}
+			}
+		 else if(a==2){
+				for(int j=0;j<no;j++){
+				 if(strcmp(n[j].profession,"cleaner")==0){
+				 	printf("----HERE IS YOUR MATCHED RESULT----\n");
+//					fscanf(fp, "name:%s\n",n[j].name);
+//        			fscanf(fp, "your contact: %s\n",n[j].contact);
+//        			fscanf(fp, "pay per hour: %d\n",n[j].pay_per_hour);
+//        			fscanf(fp, "work experience: %s\n",n[j].work_experince);
+//        			fscanf(fp, "available days: %s\n", n[j].available_days);
+//        			fscanf(fp, "available hours: %s\n", n[j].availible_hours);
+        			
+        			printf("name:%s\n",n[j].name);
+        			printf("your contact: %s\n",n[j].contact);
+        			printf("pay per hour: %d\n",n[j].pay_per_hour);
+        			printf("work experience: %s\n",n[j].work_experince);
+        			printf("available days: %s\n", n[j].available_days);
+        			printf("available hours: %s\n", n[j].availible_hours);
+				}
+				}
+			    }
+			else if(a==3){
+			    for(int j=0;j<no;j++){
+					if(strcmp(n[j].profession,"plumber")==0){
+					printf("----HERE IS YOUR MATCHED RESULT----\n");
+//					fscanf(fp, "name:%s\n", n[j].name);
+//        			fscanf(fp, "your contact: %s\n", n[j].contact);
+//        			fscanf(fp, "pay per hour: %d\n", n[j].pay_per_hour);
+//        			fscanf(fp, "work experience: %s\n", n[j].work_experince);
+//        			fscanf(fp, "available days: %s\n", n[j].available_days);
+//        			fscanf(fp, "available hours: %s\n", n[j].availible_hours);
+        			
+        			printf("name:%s\n",n[j].name);
+        			printf("your contact: %s\n",n[j].contact);
+        			printf("pay per hour: %d\n",n[j].pay_per_hour);
+        			printf("work experience: %s\n",n[j].work_experince);
+        			printf("available days: %s\n", n[j].available_days);
+        			printf("available hours: %s\n", n[j].availible_hours);
+				}
+			}
+			}
+			   else if(a==4){
+			        for(int j=0;j<no;j++){
+					 if(strcmp(n[j].profession,"mechanic")==0){
+					printf("\t----HERE IS YOUR MATCHED RESULT----\n");
+//					fscanf(fp, "name:%s\n",n[j].name);
+//        			fscanf(fp, "your contact: %s\n",n[j].contact);
+//        			fscanf(fp, "pay per hour: %d\n",n[j].pay_per_hour);
+//        			fscanf(fp, "work experience: %s\n",n[j].work_experince);
+//        			fscanf(fp, "available days: %s\n", n[j].available_days);
+//        			fscanf(fp, "available hours: %s\n", n[j].availible_hours);
+        			
+        			printf("name:%s\n",n[j].name);
+        			printf("your contact: %s\n",n[j].contact);
+        			printf("pay per hour: %d\n",n[j].pay_per_hour);
+        			printf("work experience: %s\n",n[j].work_experince);
+        			printf("available days: %s\n", n[j].available_days);
+        			printf("available hours: %s\n", n[j].availible_hours);
+				}
+				}
+				}
+				else if(a==5){
+			        for(int j=0;j<no;j++){
+					 if(strcmp(n[j].profession,"carpenter")==0){
+					printf("----HERE IS YOUR MATCHED RESULT----\n");
+//					fscanf(fp, "name:%s\n",n[j].name);
+//        			fscanf(fp, "your contact: %s\n",n[j].contact);
+//        			fscanf(fp, "pay per hour: %d\n",n[j].pay_per_hour);
+//        			fscanf(fp, "work experience: %s\n",n[j].work_experince);
+//        			fscanf(fp, "available days: %s\n", n[j].available_days);
+//        			fscanf(fp, "available hours: %s\n", n[j].availible_hours);
+        			
+        			printf("name:%s\n",n[j].name);
+        			printf("your contact: %s\n",n[j].contact);
+        			printf("pay per hour: %d\n",n[j].pay_per_hour);
+        			printf("work experience: %s\n",n[j].work_experince);
+        			printf("available days: %s\n", n[j].available_days);
+        			printf("available hours: %s\n", n[j].availible_hours);
+				}
+				}
+				}
+	 //fclose(fp);
+	}
+	else if(choice==2){
+    //int storing(employee n){
+	printf("\t\t\t#### FORM OF EMPLOY #####\n");
+	printf("Enter Your Profession name: ");
+	fflush(stdin);
+	scanf("%s", &n[i].profession);
+	fflush(stdin);
+	printf("Enter Your Name: ");
+	scanf("%s", &n[i].name);
+	fflush(stdin);
+	printf("enter your education: ");
+	gets(n[i].edu);
+	fflush(stdin);
+	printf("available days: ");
+	gets(n[i].available_days); 
+	fflush(stdin);
+	printf("available hours: ");
+	gets(n[i].availible_hours);
+	fflush(stdin);
+	printf("Enter Your contact(E-mail): ");
+	gets(n[i].contact);
+	fflush(stdin);
+	printf("Enter Your Pay Per Hour: Rs: ");
+	scanf("%d",&n[i].pay_per_hour);
+	fflush(stdin);
+	printf("Enter Your Experince: ");
+	gets(n[i].work_experince);  
+	i++;
+	    
+//        input.fname, input.lname);
+    	FILE *fp;
+    struct employee n[no];
+    fp = fopen("details.txt", "a");
+    if(fp == NULL){
+    	printf("file does not exist");
+    	exit(1);
+    }
+//     for(int i=0; i<=no; i++){
+     	fprintf(fp, "profession: %s\n", n[i].profession);	 
+		fprintf(fp, "name: %s\n", n[i].name);
+		fprintf(fp, "education: %s\n", n[i].edu);
+		fprintf(fp, "days: %s\n", n[i].available_days);
+		fprintf(fp, "hours: %s\n", n[i].availible_hours);
+		fprintf(fp, "contact: %s\n", n[i].contact);
+		fprintf(fp, "pay: %d\n", n[i].pay_per_hour);
+		fprintf(fp, "experience: %s\n\n", n[i].work_experince);
+
+//    }
+    fclose(fp);
+
+	}
+	
+//	for(int i=0; i<no; i++){
+	
+//		fputs(n[i].profession, fp);
+//		fputs(n[i].name, fp);
+//		fputs(n[i].edu,fp);
+//	    fprintf(fp, "%d", n[i].pay_per_hour);
+//		fputs(n[i].available_days,fp);
+//		fputs(n[i].availible_hours,fp);
+//		fputs(n[i].work_experince,fp);
+//		fputs(n[i].contact,fp);
+
+
+//	  fwrite(n[i].profession, sizeof(struct profession), no, fp);
+//	  fwrite(n[i].name, sizeof(struct name), no, fp);
+//	  fwrite(n[i].edu, sizeof(struct edu), no, fp);
+//	  fwrite(n[i].available_days, sizeof(struct available_days), no, fp);
+//	  fwrite(n[i].contact, sizeof(struct contact), no, fp);
+//	  fwrite(n[i].pay_per_hour, sizeof(struct pay_per_hour), no, fp);
+//	  fwrite(n[i].work_experince, sizeof(struct work_experince), no, fp);
+	  
+//	  printf("\t\n");
+//    }
+
+
+	if(choice==3){             //admin portal to maintain the data of employee.
+	int c;                      //we gave admin to read write acess by using filing
+	while(c!=0){
+		printf("Welcome To admin Portal\nEnter The password\n To exit Press 0:");
+		scanf("%d",&c);
+		char ch;
+		if(c==123){
+			  
+			 for(int j=0;j<no;j++){
+			 		FILE *fp;
+				    struct employee n[no];
+				    fp = fopen("details.txt", "r");
+				    if(fp == NULL){
+				    	printf("file does not exist");
+				    	exit(1);
+				    }
+			 	    printf("content of this file are \n");
+ 
+                    // Printing what is written in file
+                    // character by character using loop.
+				    do {
+				        ch = fgetc(fp);
+				        printf("%c", ch);
+				 
+				        // Checking if character is not EOF.
+				        // If it is EOF stop eading.
+				    } while (ch != EOF);
+                    printf("second:\n");
+				    fclose(fp);
+		}
+		}
+		else if(c==0){
+			break;
+		}
+		else{
+			printf("Wrong password");
+		}
+		}
+	}
+	else{
+		//printf("Wrong choice");
+	}
+
+}
+}
