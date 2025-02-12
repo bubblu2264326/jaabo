@@ -80,7 +80,7 @@ To better understand the platform, include screenshots or visuals here:
 ![image](https://github.com/user-attachments/assets/fbfb767e-53d3-4e42-80f4-4981276eab95)
 
 
-*(Add images in this section to enhance clarity.)*
+
 
 ---
 
