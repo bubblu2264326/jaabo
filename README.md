@@ -1,5 +1,5 @@
 
-# 📌 Online Help Platform
+# 📌 JAABO: A Platform for Connecting Citizens with Skilled Professionals
 
 ## 📝 Overview
 
