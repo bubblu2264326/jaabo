@@ -1,5 +1,3 @@
-Here’s the complete README file in GitHub Markdown format. You can copy and paste this directly into your `README.md` file:
-
 
 # 📌 Online Help Platform
 
